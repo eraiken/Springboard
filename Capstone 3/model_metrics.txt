@@ -1,0 +1,50 @@
+NYC SCHOOL NOISE ANALYSIS - MODEL METRICS
+==================================================
+
+MODEL SPECIFICATIONS
+--------------------
+Model Type: Logistic Regression
+
+FEATURES
+--------
+Number of Features: 8
+Feature List:
+- 1_engine_presence
+- 2_machinery-impact_presence
+- 3_non-machinery-impact_presence
+- 4_powered-saw_presence
+- 5_alert-signal_presence
+- 6_music_presence
+- 7_human-voice_presence
+- 8_dog_presence
+
+DATA PREPROCESSING
+-----------------
+Scaling: StandardScaler
+Class Balance Method: SMOTE
+Train-Test Split: 80-20
+
+MODEL PARAMETERS
+----------------
+random_state: 42
+
+PERFORMANCE METRICS
+-------------------
+Cross Validation Score: 0.892 (±0.063)
+F1 Score: 0.916
+Accuracy: 0.91
+Class 0 Precision: 0.67
+Class 0 Recall: 1.00
+Class 1 Precision: 1.00
+Class 1 Recall: 0.89
+
+FEATURE IMPORTANCE (Coefficients)
+------------------------------
+6_music_presence: -2.080
+8_dog_presence: -1.581
+5_alert-signal_presence: 1.530
+1_engine_presence: 1.067
+4_powered-saw_presence: -0.943
+7_human-voice_presence: 0.725
+3_non-machinery-impact_presence: 0.629
+2_machinery-impact_presence: 0.258
